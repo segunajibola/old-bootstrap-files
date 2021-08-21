@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+	<div class="col-sm-6 bg-danger">
+		
+			<form class="form-group">
+				<label for="name">FULLNAME</label>
+				<input type="text" class="form-control"  id="name" name="user_name" placeholder="FULLNAME" required="true">
+
+				<label for="mail">EMAIL</label>
+				<input type="email" id="mail" name="" class="form-control" placeholder="EMAIL" required="true">
+
+				<label for="password">PASSWORD</label>
+				<input type="password" id="password" name="" class="form-control" placeholder="PASSWORD" required="true">
+				<input type="submit" name="" class="btn btn-primary mt-3" value="SUBMIT">	
+			</form>
+		
+	</div>
+	
+	<div class="col-sm-4 bg-warning">
+		<div class="list-group">
+			<ul>
+				<li class="list-group-item">ENGLISH</li>
+				<li class="list-group-item">MATHS</li>
+				<li class="list-group-item">BIOLOGY</li>
+				<li class="list-group-item">FRENCH</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="col-md-2 bg-primary" >
+		
+	</div>
+
+</div>
+
+<div class="row">
+<div class="col-lg-12">
+
+<form data-toggle="validator" role="form">
+
+  <div class="form-group">
+    <label for="inputName" class="control-label">Name</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
+  </div>
+
+  <div class="form-group">
+    <label for="inputTwitter" class="control-label">Twitter</label>
+    	<div class="input-group">
+      		<span class="input-group-addon">@</span>
+     		<input type="text" pattern="^([_A-z0-9]){3,}$" maxlength="20" class="form-control" id="inputTwitter" placeholder="1000hz" required>
+    	</div>
+    <span class="help-block with-errors">Up to 20 letters, numbers and underscores</span>
+  </div>
+
+  <div class="form-group">
+   		 <label for="inputEmail" class="control-label">Email</label>
+   		 <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+    	<div class="help-block with-errors"></div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword" class="control-label">Password</label>
+    	<div class="form-group col-sm-6">
+      		<input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+      		<span class="help-block">Minimum of 6 characters</span>
+    	</div>
+    	<div class="form-group col-sm-6">
+     		 <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+     		 <div class="help-block with-errors"></div>
+    	</div>
+  </div>
+
+  <div class="form-group">
+    <div class="radio">
+      <label>
+    	<input type="radio" name="underwear" required>
+        Boxers
+      </label>
+    </div>
+  </div>
+
+ <div class="form-group">    
+	<div class="radio">
+      <label>
+        <input type="radio" name="underwear" required>
+        Briefs
+      </label>
+    </div>
+ </div>
+
+ <div class="form-group">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
+        Check yourself
+      </label>
+      <div class="help-block with-errors"></div>
+    </div>
+ </div>
+  
+  <div>
+    <button type="submit" class="btn btn-danger">Submit</button>
+  </div>
+</form>
+
+</div>
+</div>
+</div>
+</body>
+</html>
